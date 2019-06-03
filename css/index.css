@@ -87,9 +87,19 @@ h1, h2, h3, h4, h5 {
 	animation-timing-function: ease-out;
 }
 
-@media (max-width: 500px) {
+/* Tablet device */
+
+@media (max-width: 800px) {
     .website-wrapper header img {
         display: none;
+    }
+}
+
+/* Mobile device */
+
+@media (max-width: 500px) {
+    .navbar {
+        flex-direction: column;
     }
 }
 
