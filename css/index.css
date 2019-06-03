@@ -97,10 +97,9 @@ h1, h2, h3, h4, h5 {
         width: 100%;
     }
 
-    /* Works for mobile, not tablet */
     .navbar-img {
         order: -1;
-        width: 100%; /* 100% is on div, not image. Needed to get onto new line. with flex-wrap: wrap and order: -1, this element becomes first item*/
+        width: 100%; /* 100% is on div, not image. With flex-wrap: wrap and order: -1, this element becomes first item*/
         text-align: center;
         margin-bottom: 25px;
     }
