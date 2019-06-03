@@ -66,22 +66,21 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .website-wrapper {
 	max-width: 920px;
-	margin: 0 auto;
+	margin: 50px auto;
 	/* border: 3px solid red; */
 	/* padding: 15px; */
 }
 
 .navbar {
-	/* position: fixed; */
+	position: fixed;
 	top: 0;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	/* background-color: lightsteelblue; */
 	animation-name: stretch;
 	animation-duration: 1s;
-	animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
 }
 
 /* Tablet device */
@@ -98,6 +97,7 @@ h1, h2, h3, h4, h5 {
 @media (max-width: 500px) {
     .navbar {
         flex-direction: column;
+        position: static;
     }
 }
 
