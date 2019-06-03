@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .website-wrapper {
-	max-width: 920px;
+	max-width: 880px;
 	margin: 50px auto 0px;
 	/* border: 3px solid red; */
 	/* padding: 15px; */
@@ -156,7 +156,6 @@ header {
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
-	margin: 70px auto 70px auto;
 	align-items: center;
 }
 
