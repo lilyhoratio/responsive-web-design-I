@@ -66,16 +66,17 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .website-wrapper {
 	max-width: 920px;
-	margin: 50px auto;
+	margin: 50px auto 0px;
 	/* border: 3px solid red; */
 	/* padding: 15px; */
 }
 
 .navbar {
-	position: fixed;
+    /* position: fixed; */
+    background-color: white;
 	top: 0;
 	width: 100%;
-	display: flex;
+    display: flex;
 	justify-content: space-around;
 	align-items: center;
 	animation-name: stretch;
@@ -86,18 +87,35 @@ h1, h2, h3, h4, h5 {
 /* Tablet device */
 
 @media (max-width: 800px) {
+    .navbar {
+        flex-wrap: wrap;
+        /* padding: 25px 20px; */
+    }
+    
     .website-wrapper header img {
         display: none;
         width: 100%;
     }
+
+    /* Works for mobile, not tablet */
+    .navbar-img {
+        order: -1;
+        width: 100%; /* 100% is on div, not image. Needed to get onto new line. with flex-wrap: wrap and order: -1, this element becomes first item*/
+        text-align: center;
+        margin-bottom: 25px;
+    }
 }
 
 /* Mobile device */
-
 @media (max-width: 500px) {
     .navbar {
         flex-direction: column;
         position: static;
+    }
+
+    .navbar-img {
+        border-bottom: 1px solid grey;
+        margin-bottom: 0; 
     }
 }
 
@@ -117,7 +135,7 @@ nav a {
     nav a {
         width: 100%;
         padding: 10px;
-        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
         display: flex;
         justify-content: center;
         
